@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog | Anukalp Varshney</title>
+    <link rel="stylesheet" href="blog.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+    <link rel="shortcut icon" href="my_image.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    
+
+<nav class="nav">
+        <i class="uil uil-bars navOpenBtn"></i>
+        <a href="index.html" class="logo">Anukalp Varshney</a>
+        <ul class="nav-links">
+          <i class="uil uil-times navCloseBtn"></i>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="gears.html">My Gears</a></li>
+          <li><a href="blog.html"  class="active">Blog</a></li>
+          <li><a href="work.html">My Work</a></li>
+          <li><a href="contact.html">Contact Me</a></li>
+        </ul>
+        <i class="uil uil-search search-icon" id="searchIcon"></i>
+        <div class="search-box">
+          <i class="uil uil-search search-icon"></i>
+          <input type="text" placeholder="Search here..." />
+        </div>
+  </nav>
+
+
+
+
+  
+  
+  <iframe src ="https://kweb-creations.blogspot.com/" width="100%" height="1000px"> </iframe>
+
+  
+
+  <div class="footer">
+
+    <div class="f-name">
+      <p class="copyright">&copy; 2024 @Anukalp Varshney. All Rights Reserved</p>
+    </div>
+  
+    <div class="sh-icon">
+      <button onclick="openInNewTab('https://www.youtube.com/@MS-Anukalp')"><i class="fa-brands fa-youtube"></i></button>
+      <button onclick="openInNewTab('https://x.com/AnukalpVarshney')"> <i class="fa-brands fa-twitter"></i></button>
+      <button onclick="openInNewTab('https://www.instagram.com/anukalp_varshney_/?hl=en')"><i class="fa-brands fa-instagram"></i></button>
+    </div>
+  
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+        const nav = document.querySelector(".nav"),
+searchIcon = document.querySelector("#searchIcon"),
+navOpenBtn = document.querySelector(".navOpenBtn"),
+navCloseBtn = document.querySelector(".navCloseBtn");
+
+searchIcon.addEventListener("click", () => {
+nav.classList.toggle("openSearch");
+nav.classList.remove("openNav");
+if (nav.classList.contains("openSearch")) {
+return searchIcon.classList.replace("uil-search", "uil-times");
+}
+searchIcon.classList.replace("uil-times", "uil-search");
+});
+
+navOpenBtn.addEventListener("click", () => {
+nav.classList.add("openNav");
+nav.classList.remove("openSearch");
+searchIcon.classList.replace("uil-times", "uil-search");
+});
+navCloseBtn.addEventListener("click", () => {
+nav.classList.remove("openNav");
+});
+</script>
+
+
+<script>
+    function openInNewTab(url) {
+    window.open(url, '_blank').focus();
+  }
+  </script>
+
+
+</body>
+</html>
